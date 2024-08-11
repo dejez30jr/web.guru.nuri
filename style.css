@@ -4,6 +4,7 @@ html {
     padding: 0;
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
+    background-color: #093c66;
 }
 
 body::-webkit-scrollbar{
@@ -125,7 +126,7 @@ h1{
 
 section#about {
     background-attachment: fixed;
-    background-color: #093c66;
+    /* background-color: #093c66; */
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -134,8 +135,9 @@ section#about {
 
 
 section#Experience {
-    background-attachment: fixed;
-    background-color: #093c66;
+    /* background-attachment: fixed; */
+    background-color: transparent;
+    /* background-color: #093c66; */
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -208,7 +210,6 @@ form label{
   
   form:hover{
     border: 2px solid red;
-    transform: scale(1.1);
   }
   
   form label {
@@ -250,20 +251,27 @@ form label{
     padding: 10px;
     align-items: center;
     margin: 10px;
-    gap: 20px;
+    gap: 10px;
     margin-top: 20px;
   }
   
   #item-icon{
     font-size: 25px;
+    background-color: rgb(30, 32, 32);
+    padding: 10px;
+    border-radius: 10px;
   }
   
   
-
+@media (max-width: 319px){
+    body{
+        display: none;
+    }
+}
 @media (max-width: 379px) {
     #hidden {
         display: none;
-    }s
+    }
 
     nav {
         width: 400px;
@@ -271,17 +279,68 @@ form label{
 
     #i-hidden {
         font-size: 30px;
+        background-color: rgb(52, 100, 172);
+        color: white;
+        padding: 8px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
     }
-    main{
-        width: 100%;
+    /* .card-item{
+        background-color: rgb(152, 173, 82);
         padding: 0;
-    }
-    form{
         width: 100%;
     }
     .item1{
-        backdrop-filter: blur(10px);
+        background-color: brown;
+        padding: 0;
+        min-width: 20%;
     }
+
+    .container{
+        width: 100%;
+        background-color: aquamarine;
+        padding: 0;
+        margin: 0;
+    }
+    section#kontak{
+    }
+    .item1{
+        backdrop-filter: blur(10px);
+    } */
+
+
+    main{
+        margin: 0;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+      }
+      form{
+        width: 100%;
+        box-shadow: none;
+      }
+      .card-item{
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+      }
+      .container{
+        display: flex;
+        padding: 0;
+        overflow: hidden;
+        justify-content: center;
+      }
+      .item2{
+        flex-wrap: wrap;
+      }
+      .item1{
+      }
+      #item-icon{
+       padding: 5px;
+      }
 }
 
 /* @media (max-width: 398px){
