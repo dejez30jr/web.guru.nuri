@@ -10,7 +10,7 @@
 // });
 
 
-const text = "WELCOME TO MY WEBSITE SYAHLAN BUDISANTOSO";
+const text = "SYAHLAN BUDISANTOSO";
 let index = 0;
 const speed = 100; 
 
