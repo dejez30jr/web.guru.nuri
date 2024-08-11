@@ -1,13 +1,13 @@
-window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.navbar');
-    if (window.scrollY > 0) {
-        navbar.style.top = 'auto';
-        navbar.style.bottom = '0';
-    } else {
-        navbar.style.top = '0';
-        navbar.style.bottom = 'auto';
-    }
-});
+// window.addEventListener('scroll', function() {
+//     var navbar = document.querySelector('.navbar');
+//     if (window.scrollY > 0) {
+//         navbar.style.top = 'auto';
+//         navbar.style.bottom = '0';
+//     } else {
+//         navbar.style.top = '0';
+//         navbar.style.bottom = 'auto';
+//     }
+// });
 
 
 const text = "WELCOME TO MY WEBSITE SYAHLAN BUDISANTOSO";
