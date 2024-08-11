@@ -149,10 +149,10 @@ section#Experience {
 }
 
 section#kontak {
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1013%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/rect%3e%3cpath d='M1512 560L0 560 L0 466.57Q5.35 399.92%2c 72 405.27Q121.35 334.62%2c 192 383.97Q296.46 368.43%2c 312 472.89Q320.61 361.5%2c 432 370.11Q475.81 293.92%2c 552 337.72Q611.59 325.31%2c 624 384.9Q697.79 338.69%2c 744 412.48Q796.69 345.17%2c 864 397.86Q868.86 330.72%2c 936 335.58Q1001.13 280.71%2c 1056 345.84Q1074.09 291.92%2c 1128 310.01Q1154.69 264.7%2c 1200 291.39Q1289.63 261.01%2c 1320 350.64Q1343.4 302.04%2c 1392 325.44Q1443.26 256.69%2c 1512 307.95z' fill='rgba(45%2c 90%2c 164%2c 1)'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 531.9Q21.01 480.9%2c 72 501.91Q119.89 429.81%2c 192 477.7Q234.07 447.77%2c 264 489.84Q361.83 467.67%2c 384 565.51Q398.77 460.28%2c 504 475.05Q528.22 427.27%2c 576 451.49Q597.56 401.05%2c 648 422.61Q713.2 367.81%2c 768 433.02Q873.83 418.85%2c 888 524.68Q902.03 466.71%2c 960 480.74Q1007.1 407.84%2c 1080 454.94Q1121.2 424.14%2c 1152 465.35Q1217.84 411.19%2c 1272 477.02Q1340.89 473.91%2c 1344 542.81Q1425.89 504.7%2c 1464 586.6z' fill='rgba(19%2c 63%2c 118%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1013'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/rect%3e%3cpath d='M1560 560L0 560 L0 332.18Q65.18 277.36%2c 120 342.54Q160.98 263.52%2c 240 304.5Q324.16 268.66%2c 360 352.83Q388.81 309.63%2c 432 338.44Q483.21 317.65%2c 504 368.86Q531.1 275.96%2c 624 303.06Q669.19 276.25%2c 696 321.44Q762.19 267.63%2c 816 333.82Q888.39 286.22%2c 936 358.61Q961.54 264.15%2c 1056 289.69Q1130.2 243.89%2c 1176 318.1Q1203.74 273.84%2c 1248 301.57Q1339.29 272.86%2c 1368 364.14Q1398.35 322.49%2c 1440 352.84Q1477.08 269.91%2c 1560 306.99z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 421.64Q57.02 358.66%2c 120 415.68Q168.95 344.63%2c 240 393.59Q292.73 326.31%2c 360 379.04Q387.18 334.22%2c 432 361.4Q510.55 319.95%2c 552 398.5Q612.47 386.97%2c 624 447.44Q627.39 378.83%2c 696 382.22Q761.65 327.87%2c 816 393.52Q895.83 353.35%2c 936 433.18Q942.75 367.94%2c 1008 374.69Q1050.58 345.27%2c 1080 387.85Q1129.16 365.01%2c 1152 414.17Q1202.51 392.68%2c 1224 443.19Q1226.44 373.63%2c 1296 376.08Q1344.47 304.55%2c 1416 353.02Q1474.05 339.06%2c 1488 397.11z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1560 560L0 560 L0 512.9Q45.1 438%2c 120 483.09Q155.15 398.24%2c 240 433.38Q285.69 407.06%2c 312 452.75Q363.7 432.45%2c 384 484.15Q398.64 426.79%2c 456 441.43Q509.22 374.65%2c 576 427.88Q628.49 408.37%2c 648 460.86Q678.48 419.34%2c 720 449.82Q765.64 375.47%2c 840 421.11Q897.79 406.9%2c 912 464.69Q963.25 443.94%2c 984 495.19Q1033.93 425.12%2c 1104 475.05Q1158.61 409.66%2c 1224 464.27Q1239.7 407.97%2c 1296 423.67Q1339.34 395%2c 1368 438.34Q1426.59 424.93%2c 1440 483.52Q1483.79 407.31%2c 1560 451.1z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 586.14Q33.66 547.8%2c 72 581.46Q67 504.47%2c 144 499.47Q194.62 478.09%2c 216 528.71Q264.14 504.85%2c 288 552.99Q318.85 511.84%2c 360 542.69Q379.18 489.87%2c 432 509.05Q482.98 440.03%2c 552 491.01Q609.48 476.49%2c 624 533.97Q705.53 495.5%2c 744 577.03Q764.19 525.22%2c 816 545.41Q856.82 466.23%2c 936 507.05Q1024.3 475.35%2c 1056 563.65Q1095.19 482.84%2c 1176 522.03Q1222.83 448.86%2c 1296 495.68Q1397.94 477.62%2c 1416 579.56Q1445.26 536.82%2c 1488 566.08z' fill='rgba(192%2c 208%2c 227%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 /* main{
     background-color: aquamarine;
@@ -288,7 +288,6 @@ footer{
 }
 .nuri-jpg{
     border-radius: 50%;
-    width: 40%;
     height: 100%;
 }
 .end-ftr{
@@ -391,6 +390,15 @@ footer{
     }
 } */
 @media (max-width: 700px) {
+    footer{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px 10px 60px;
+    }
+    .ftr-item{
+        margin-top: 30px;
+    }
     header.navbar{
         bottom: 0;
     }
@@ -476,5 +484,13 @@ footer{
     }
     header.navbar{
         top: 0;
+    }
+    .ftr-item-a{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        color: white;
+        text-align: center;
     }
 }
