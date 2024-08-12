@@ -57,7 +57,13 @@ header.navbar nav ul li a {
 }
 section {
     padding: 100px 20px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+}
+.revo-jpg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 section#home {
     height: 100vh;
@@ -65,7 +71,6 @@ section#home {
     justify-content: center;
     align-items: center;
     color: white;
-    /* background-image: url(pexels-felixmittermeier-956981.jpg); */
     background-size: cover;
     background-position: center;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c113 C 96%2c181 288%2c475.4 480%2c453 C 672%2c430.6 768%2c18.2 960%2c1 C 1152%2c-16.2 1344%2c293.8 1440%2c367L1440 560L0 560z' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
@@ -73,6 +78,7 @@ section#home {
     font-family: "Bebas Neue", sans-serif;
     font-size: 35px;
     border-image: fill 0 linear-gradient(#0003, #093c66);
+    flex-wrap: wrap;
 }
 
 .judul {
@@ -85,11 +91,14 @@ section#home {
     color: white;
 }
 .tema{
-    text-shadow: 0 6px 10px rgb(21, 9, 9);
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* text-shadow: 0 6px 10px rgb(21, 9, 9); */
 }
 
 h1{
     overflow: hidden;
+    width: 40%;
 }
 
 .card {
@@ -126,6 +135,7 @@ h1{
 }
 
 section#about {
+    min-height: 100vh;
     /* background-attachment: fixed; */
     /* background-color: #093c66; */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='800' preserveAspectRatio='none' viewBox='0 0 1440 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3crect width='1440' height='800' x='0' y='0' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/rect%3e%3cpath d='M -680.2440339605178%2c192 C -584.24%2c277.2 -392.24%2c589.2 -200.24403396051775%2c618 C -8.24%2c646.8 87.76%2c362 279.75596603948225%2c336 C 471.76%2c310 567.76%2c516.6 759.7559660394822%2c488 C 951.76%2c459.4 1103.71%2c188.6 1239.7559660394822%2c193 C 1375.8%2c197.4 1399.95%2c446.6 1440%2c510' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -798.5145090774333%2c437 C -702.51%2c378.6 -510.51%2c121 -318.5145090774334%2c145 C -126.51%2c169 -30.51%2c534 161.4854909225666%2c557 C 353.49%2c580 449.49%2c282.6 641.4854909225667%2c260 C 833.49%2c237.4 961.78%2c474 1121.4854909225667%2c444 C 1281.19%2c414 1376.3%2c176.8 1440%2c110' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -359.84167915044395%2c409 C -263.84%2c365 -71.84%2c178.8 120.15832084955602%2c189 C 312.16%2c199.2 408.16%2c472 600.158320849556%2c460 C 792.16%2c448 888.16%2c77.4 1080.158320849556%2c129 C 1272.16%2c180.6 1488.19%2c665.8 1560.158320849556%2c718 C 1632.13%2c770.2 1464.03%2c455.6 1440%2c390' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -141.98803074371898%2c582 C -45.99%2c524.6 146.01%2c270.8 338.011969256281%2c295 C 530.01%2c319.2 626.01%2c715.8 818.011969256281%2c703 C 1010.01%2c690.2 1106.01%2c257.2 1298.011969256281%2c231 C 1490.01%2c204.8 1749.61%2c584.2 1778.011969256281%2c572 C 1806.41%2c559.8 1507.6%2c250.4 1440%2c170' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
@@ -138,6 +148,7 @@ section#about {
 
 
 section#Experience {
+    min-height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -149,6 +160,7 @@ section#Experience {
 }
 
 section#kontak {
+    min-height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -209,7 +221,7 @@ form label{
     padding: 10px;
     border: 2px solid rgb(156, 156, 156);
     gap: 20px;
-    background-color: white;
+    background-color: rgb(188, 188, 188);
   }
   
   form:hover{
@@ -269,11 +281,15 @@ form label{
 
   /* footer */
 footer{
-    background-color: rgb(35, 35, 36);
+    /* background-color: rgb(35, 35, 36); */
+    background-image: url(aset/bg-angkasa\ bulan.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
+    background-position: center;
     height: 500px;
     align-items: center;
+    border-image: fill 0 linear-gradient(#093c66,#0003);
     flex-wrap: wrap;
     /* border: 2px  solid black; */
 }
@@ -390,11 +406,31 @@ footer{
     }
 } */
 @media (max-width: 700px) {
+    .revo-jpg{
+        width: 100%;
+        border-radius: 50%;
+        height: 100%;
+    }
+    h1{
+        margin-top: 0;
+        width: auto;
+        height: auto;
+    }
+    .revo{
+        height: 40%;
+    }
+    .tema{
+        gap: 0;
+    }
+    section#home {
+        align-items: start;
+    }
     footer{
         flex-direction: column;
         text-align: center;
         height: auto;
         padding: 10px 10px 60px;
+        background-position: bottom;
     }
     .ftr-item{
         margin-top: 30px;
@@ -479,9 +515,9 @@ footer{
         text-align: center;
         color: white;
     }
-    #typing span{
+    /* #typing span{
         color: #5fa1d7;
-    }
+    } */
     header.navbar{
         top: 0;
     }
@@ -492,5 +528,8 @@ footer{
         margin: 10px;
         color: white;
         text-align: center;
+    }
+    .revo{
+        width: 30%;
     }
 }
