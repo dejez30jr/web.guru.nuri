@@ -1,535 +1,250 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body::-webkit-scrollbar{
-    display: none;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 
-header {
-    justify-content: center;
-    display: flex;
-    width: 100%;
-}
+</head>
 
-nav {
-    background-color: rgb(255, 255, 255);
-    width: 50%;
-    border-radius: 20px;
-    padding: 10px;
-}
+<body>
+    <div class="nav-a">
+        <header class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <i id="i-hidden"><a class="ph ph-house" href="#home"></a></i>
+                        <a href="#home" id="hidden">ʜᴏᴍᴇ</a>
+                    </li>
+                    <li>
+                        <i id="i-hidden"><a class="ph ph-address-book" href="#about"></a></i>
+                        <a href="#about" id="hidden">ᴀʙᴏᴏᴜᴛ</a>
+                    </li>
+                    <li>
+                        <i id="i-hidden"><a class="ph ph-clipboard-text" href="#Experience"></a></i>
+                        <a href="#Experience" id="hidden">ᴇxᴘᴇʀɪᴇɴᴄᴇ</a>
+                    </li>
+                    <li>
+                        <i id="i-hidden"><a class="ph ph-paper-plane-tilt" href="#kontak"></a></i>
+                        <a href="#kontak" id="hidden">ᴄᴏɴᴛᴀᴄᴛ</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
-header.navbar {
-    width: 100%;
-    margin: auto;
-    position: fixed;
-    margin-top: 10px;
-    border-radius: 20px;
-    left: 0;
-    padding: 10px 0;
-    color: rgb(0, 0, 0);
-    transition: top 0.5s;
-    z-index: 1000;
-}
-
-header.navbar nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-header.navbar nav ul li {
-    margin: 0 15px;
-    text-align: center;
-    transition: 1s;
-}
-
-header.navbar nav ul li a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 18px;
-}
-section {
-    padding: 100px 20px;
-    /* min-height: 100vh; */
-}
-.revo-jpg{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 2px solid white;
-}
-section#home {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c113 C 96%2c181 288%2c475.4 480%2c453 C 672%2c430.6 768%2c18.2 960%2c1 C 1152%2c-16.2 1344%2c293.8 1440%2c367L1440 560L0 560z' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    /* background-attachment: fixed; */
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 35px;
-    border-image: fill 0 linear-gradient(#0003, #093c66);
-    flex-wrap: wrap;
-}
-
-.judul {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 33px;
-    margin-top: 20%;
-    color: white;
-}
-.tema{
-    gap: 2rem;
-    flex-wrap: wrap;
-    /* text-shadow: 0 6px 10px rgb(21, 9, 9); */
-}
-
-h1{
-    overflow: hidden;
-    width: 40%;
-}
-
-.card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.images {
-    width: 40%;
-}
-
-.about-jpg {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.about-png {
-    width: 100%;
-    height: 40%;
-    border-radius: 10px;
-}
-
-.text {
-    width: 50%;
-    color: white;
-    padding: 10px;
-}
-
-.text-a {
-    line-height: 1.6;
-}
-
-section#about {
-    min-height: 100vh;
-    /* background-attachment: fixed; */
-    /* background-color: #093c66; */
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='800' preserveAspectRatio='none' viewBox='0 0 1440 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3crect width='1440' height='800' x='0' y='0' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/rect%3e%3cpath d='M -680.2440339605178%2c192 C -584.24%2c277.2 -392.24%2c589.2 -200.24403396051775%2c618 C -8.24%2c646.8 87.76%2c362 279.75596603948225%2c336 C 471.76%2c310 567.76%2c516.6 759.7559660394822%2c488 C 951.76%2c459.4 1103.71%2c188.6 1239.7559660394822%2c193 C 1375.8%2c197.4 1399.95%2c446.6 1440%2c510' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -798.5145090774333%2c437 C -702.51%2c378.6 -510.51%2c121 -318.5145090774334%2c145 C -126.51%2c169 -30.51%2c534 161.4854909225666%2c557 C 353.49%2c580 449.49%2c282.6 641.4854909225667%2c260 C 833.49%2c237.4 961.78%2c474 1121.4854909225667%2c444 C 1281.19%2c414 1376.3%2c176.8 1440%2c110' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -359.84167915044395%2c409 C -263.84%2c365 -71.84%2c178.8 120.15832084955602%2c189 C 312.16%2c199.2 408.16%2c472 600.158320849556%2c460 C 792.16%2c448 888.16%2c77.4 1080.158320849556%2c129 C 1272.16%2c180.6 1488.19%2c665.8 1560.158320849556%2c718 C 1632.13%2c770.2 1464.03%2c455.6 1440%2c390' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -141.98803074371898%2c582 C -45.99%2c524.6 146.01%2c270.8 338.011969256281%2c295 C 530.01%2c319.2 626.01%2c715.8 818.011969256281%2c703 C 1010.01%2c690.2 1106.01%2c257.2 1298.011969256281%2c231 C 1490.01%2c204.8 1749.61%2c584.2 1778.011969256281%2c572 C 1806.41%2c559.8 1507.6%2c250.4 1440%2c170' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    background-size: cover;
-    flex-wrap: wrap;
-}
+    <section id="home" class="tema">
+        <div class="revo">
+        <img src="aset/kecec.jpg" class="revo-jpg">
+        </div>
+        <h1 id="typing"><span>WELCOME TO MY WEB</span> SITE </h1>
+    </section>
 
 
-section#Experience {
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='800' preserveAspectRatio='none' viewBox='0 0 1440 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3crect width='1440' height='800' x='0' y='0' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/rect%3e%3cpath d='M -680.2440339605178%2c192 C -584.24%2c277.2 -392.24%2c589.2 -200.24403396051775%2c618 C -8.24%2c646.8 87.76%2c362 279.75596603948225%2c336 C 471.76%2c310 567.76%2c516.6 759.7559660394822%2c488 C 951.76%2c459.4 1103.71%2c188.6 1239.7559660394822%2c193 C 1375.8%2c197.4 1399.95%2c446.6 1440%2c510' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -798.5145090774333%2c437 C -702.51%2c378.6 -510.51%2c121 -318.5145090774334%2c145 C -126.51%2c169 -30.51%2c534 161.4854909225666%2c557 C 353.49%2c580 449.49%2c282.6 641.4854909225667%2c260 C 833.49%2c237.4 961.78%2c474 1121.4854909225667%2c444 C 1281.19%2c414 1376.3%2c176.8 1440%2c110' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -359.84167915044395%2c409 C -263.84%2c365 -71.84%2c178.8 120.15832084955602%2c189 C 312.16%2c199.2 408.16%2c472 600.158320849556%2c460 C 792.16%2c448 888.16%2c77.4 1080.158320849556%2c129 C 1272.16%2c180.6 1488.19%2c665.8 1560.158320849556%2c718 C 1632.13%2c770.2 1464.03%2c455.6 1440%2c390' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -141.98803074371898%2c582 C -45.99%2c524.6 146.01%2c270.8 338.011969256281%2c295 C 530.01%2c319.2 626.01%2c715.8 818.011969256281%2c703 C 1010.01%2c690.2 1106.01%2c257.2 1298.011969256281%2c231 C 1490.01%2c204.8 1749.61%2c584.2 1778.011969256281%2c572 C 1806.41%2c559.8 1507.6%2c250.4 1440%2c170' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
+    <section id="about">
+        <div class="judul" data-aos="fade-right" data-aos-delay="600">
+            <h3>ABOUT ME</h3>
+        </div>
+        <div class="card">
+            <div class="images">
+                <img src="aset/sucses.jpg" class="about-jpg" data-aos="fade-right" data-aos-delay="700">
+            </div>
+            <div class="text" data-aos="fade-right" data-aos-delay="800">
+                <div class="text-a">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, eaque alias. Alias laborum, ab
+                        ducimus
+                        consectetur nisi tempora assumenda consequuntur quasi mollitia quis dolorem deserunt dolor magni
+                        aspernatur totam nam!</p>
+                </div>
 
-section#kontak {
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/rect%3e%3cpath d='M1560 560L0 560 L0 332.18Q65.18 277.36%2c 120 342.54Q160.98 263.52%2c 240 304.5Q324.16 268.66%2c 360 352.83Q388.81 309.63%2c 432 338.44Q483.21 317.65%2c 504 368.86Q531.1 275.96%2c 624 303.06Q669.19 276.25%2c 696 321.44Q762.19 267.63%2c 816 333.82Q888.39 286.22%2c 936 358.61Q961.54 264.15%2c 1056 289.69Q1130.2 243.89%2c 1176 318.1Q1203.74 273.84%2c 1248 301.57Q1339.29 272.86%2c 1368 364.14Q1398.35 322.49%2c 1440 352.84Q1477.08 269.91%2c 1560 306.99z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 421.64Q57.02 358.66%2c 120 415.68Q168.95 344.63%2c 240 393.59Q292.73 326.31%2c 360 379.04Q387.18 334.22%2c 432 361.4Q510.55 319.95%2c 552 398.5Q612.47 386.97%2c 624 447.44Q627.39 378.83%2c 696 382.22Q761.65 327.87%2c 816 393.52Q895.83 353.35%2c 936 433.18Q942.75 367.94%2c 1008 374.69Q1050.58 345.27%2c 1080 387.85Q1129.16 365.01%2c 1152 414.17Q1202.51 392.68%2c 1224 443.19Q1226.44 373.63%2c 1296 376.08Q1344.47 304.55%2c 1416 353.02Q1474.05 339.06%2c 1488 397.11z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1560 560L0 560 L0 512.9Q45.1 438%2c 120 483.09Q155.15 398.24%2c 240 433.38Q285.69 407.06%2c 312 452.75Q363.7 432.45%2c 384 484.15Q398.64 426.79%2c 456 441.43Q509.22 374.65%2c 576 427.88Q628.49 408.37%2c 648 460.86Q678.48 419.34%2c 720 449.82Q765.64 375.47%2c 840 421.11Q897.79 406.9%2c 912 464.69Q963.25 443.94%2c 984 495.19Q1033.93 425.12%2c 1104 475.05Q1158.61 409.66%2c 1224 464.27Q1239.7 407.97%2c 1296 423.67Q1339.34 395%2c 1368 438.34Q1426.59 424.93%2c 1440 483.52Q1483.79 407.31%2c 1560 451.1z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 586.14Q33.66 547.8%2c 72 581.46Q67 504.47%2c 144 499.47Q194.62 478.09%2c 216 528.71Q264.14 504.85%2c 288 552.99Q318.85 511.84%2c 360 542.69Q379.18 489.87%2c 432 509.05Q482.98 440.03%2c 552 491.01Q609.48 476.49%2c 624 533.97Q705.53 495.5%2c 744 577.03Q764.19 525.22%2c 816 545.41Q856.82 466.23%2c 936 507.05Q1024.3 475.35%2c 1056 563.65Q1095.19 482.84%2c 1176 522.03Q1222.83 448.86%2c 1296 495.68Q1397.94 477.62%2c 1416 579.56Q1445.26 536.82%2c 1488 566.08z' fill='rgba(192%2c 208%2c 227%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-}
-/* main{
-    background-color: aquamarine;
-    width: 30%;
-    padding: 5px;
-}
-form{
-    background-color: brown;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-.judul-form{
-    text-align: center;
-}
-form input{
-    padding: 10px;
-}
-form label{
-    padding: 10px;
-}
+                <div class="text-a">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, eaque alias. Alias laborum, ab
+                        ducimus
+                        consectetur nisi tempora assumenda consequuntur quasi mollitia quis dolorem deserunt dolor magni
+                        aspernatur totam nam!</p>
+                </div>
 
-.kontak{
-    background-color: rgb(37, 91, 91);
-}
-.item-kontak{
-    background-color: brown;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-} */
+                <div class="text-a">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, eaque alias. Alias laborum, ab
+                        ducimus
+                        consectetur nisi tempora assumenda consequuntur quasi mollitia quis dolorem deserunt dolor magni
+                        aspernatur totam nam!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="Experience">
+        <div class="judul" data-aos="fade-right" data-aos-delay="700">
+            <h3>EXPERIENCE</h3>
+        </div>
+        <div class="card">
+            <div class="images">
+                <img src="aset/sucses.jpg" class="about-png" data-aos="fade-right" data-aos-delay="700">
+            </div>
+            <div class="text" data-aos="fade-right" data-aos-delay="900">
+                <div class="text-a">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, eaque alias. Alias laborum, ab
+                        ducimus
+                        consectetur nisi tempora assumenda consequuntur quasi mollitia quis dolorem deserunt dolor magni
+                        aspernatur totam nam!</p>
+                </div>
 
-.container{
-    display: flex;
-    padding: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+                <div class="text-a">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, eaque alias. Alias laborum, ab
+                        ducimus
+                        consectetur nisi tempora assumenda consequuntur quasi mollitia quis dolorem deserunt dolor magni
+                        aspernatur totam nam!</p>
+                </div>
 
-  main {
-    padding: 20px;
-    margin: 10px;
-    width: 40%;
-  }
-  
-  /* Form Styles */
-  form {
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    width: 100%;
-    padding: 10px;
-    border: 2px solid rgb(156, 156, 156);
-    gap: 20px;
-    background-color: rgb(188, 188, 188);
-  }
-  
-  form:hover{
-    border: 2px solid red;
-  }
-  
-  form label {
-    /* margin: 5px; */
-    margin-bottom: -4%;
-  }
-  
-  form input, form textarea {
-    padding: 10px;
-    margin-bottom: -4%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  form button {
-    padding: 10px;
-    background-color: rgb(30, 31, 32);
-    color: white;
-    border: none;
-    border-radius: 10px;
-  }
-  
-  h1{
-    text-align: center;
-  }
-  
-  
-  
-  
-  .card-item{
-    width: 40%;
-    padding: 10px;
-    margin-top: 5px;
-    color: white;
-  }
-  
-  .item1{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    margin: 10px;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  
-  #item-icon{
-    font-size: 25px;
-    background-color: rgb(30, 32, 32);
-    padding: 10px;
-    border-radius: 10px;
-  }
-  
+                <div class="text-a">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, eaque alias. Alias laborum, ab
+                        ducimus
+                        consectetur nisi tempora assumenda consequuntur quasi mollitia quis dolorem deserunt dolor magni
+                        aspernatur totam nam!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  /* footer */
-footer{
-    /* background-color: rgb(35, 35, 36); */
-    background-image: url(aset/bg-angkasa\ bulan.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    background-position: center;
-    height: 500px;
-    align-items: center;
-    border-image: fill 0 linear-gradient(#093c66,#0003);
-    flex-wrap: wrap;
-    /* border: 2px  solid black; */
-}
-.ftr-item{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    line-height: 1.5;
-    color: white;
-    text-align: center;
-}
-.nuri-jpg{
-    border-radius: 50%;
-    height: 100%;
-}
-.end-ftr{
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    color: white;
-}
+    <section id="kontak">
+        <div class="judul" data-aos="fade-right" data-aos-delay="600">
+            <h3>Contact</h3>
+        </div>
 
-@media (max-width: 319px){
-    body{
-        display: none;
-    }
-}
-@media (max-width: 379px) {
-    #hidden {
-        display: none;
-    }
+        <!-- <main>
+            <form action="">
+                <div class="judul-form">
+                    <h4>KRITIK DAN SARAN</h4>
+                </div>
 
-    nav {
-        width: 400px;
-    }
+                <label for="name">Nama</label>
+                <input type="text" placeholder="Masukan nama">
 
-    #i-hidden {
-        font-size: 30px;
-        background-color: rgb(52, 100, 172);
-        color: white;
-        padding: 8px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-    }
-    /* .card-item{
-        background-color: rgb(152, 173, 82);
-        padding: 0;
-        width: 100%;
-    }
-    .item1{
-        background-color: brown;
-        padding: 0;
-        min-width: 20%;
-    }
+                <label for="email">Email</label>
+                <input type="email" placeholder="Masukan email">
 
-    .container{
-        width: 100%;
-        background-color: aquamarine;
-        padding: 0;
-        margin: 0;
-    }
-    section#kontak{
-    }
-    .item1{
-        backdrop-filter: blur(10px);
-    } */
+                <label for="name">Pesan</label>
+                <textarea name="pesan" placeholder="Masukan pesan" rows="4"></textarea>
 
+            </form>
+        </main>
 
-    main{
-        margin: 0;
-        padding: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-      }
-      form{
-        width: 100%;
-        box-shadow: none;
-      }
-      .card-item{
-        margin: 0;
-        padding: 0;
-        margin-top: 10px;
-      }
-      .container{
-        display: flex;
-        padding: 0;
-        overflow: hidden;
-        justify-content: center;
-      }
-      .item2{
-        flex-wrap: wrap;
-      }
-      .item1{
-      }
-      #item-icon{
-       padding: 5px;
-      }
-}
+        <div class="kontak">
+         <div class="item-kontak">
+            <i class="ph ph-house" id="i-kontak"></i>
+            <div class="isi-kontak">
+                <strong>phone</strong>
+                <p>08786292965</p>
+            </div>
+         </div>
+        </div> -->
+        <div class="container">
 
-/* @media (max-width: 398px){
-    .navbar{
-        padding: 20px;
-        background-color: aqua;
-    }
-    nav{
-        width: 100%;
-    }
-    header.navbar{
-        width: 90%;
-    }
-} */
-@media (max-width: 700px) {
-    .revo-jpg{
-        width: 100%;
-        border-radius: 50%;
-        height: 100%;
-    }
-    h1{
-        margin-top: 0;
-        width: auto;
-        height: auto;
-    }
-    .revo{
-        height: 40%;
-    }
-    .tema{
-        gap: 0;
-    }
-    section#home {
-        align-items: start;
-    }
-    footer{
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 10px 10px 60px;
-        background-position: bottom;
-    }
-    .ftr-item{
-        margin-top: 30px;
-    }
-    header.navbar{
-        bottom: 0;
-    }
-    section.tema {
-        text-align: center;
-    }
+            <main data-aos="fade-right" data-aos-delay="1000">
+                <form action="https://formspree.io/f/mwpeeajl" method="POST">
+                    <h1>Contact us</h1>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-    /* nav */
-    header {
-        width: auto;
-    }
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-    nav {
-        width: 90%;
-        flex-wrap: nowrap;
-    }
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
 
-    /* section */
-    section#about {
-        flex-wrap: wrap;
-        width: auto;
-    }
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
 
-    section#services {
-        display: list-item;
-    }
+                    <button type="submit">Submit</button>
+                </form>
+            </main>
 
-    .images {
-        width: 100%;
-    }
+            <div class="card-item" data-aos="fade-right" data-aos-delay="700">
+                <div class="item1">
+                    <i class="ph ph-map-pin" id="item-icon"></i>
+                    <div class="item2">
+                        <strong>Alamat</strong>
+                        <p>Jl. pisangan baru jaktim smk nurul iman.</p>
+                    </div>
+                </div>
 
-    .about-jpg {
-        width: 100%;
-    }
+                <div class="item1" data-aos="fade-right" data-aos-delay="800">
+                    <i class="ph ph-phone" id="item-icon"></i>
+                    <div class="item2">
+                        <strong>Phone</strong>
+                        <p>+62 822-9427-3068</p>
+                    </div>
+                </div>
 
-    .about-png {
-        width: 100%;
-        border-radius: 10px;
-        margin: auto;
-    }
+                <div class="item1" data-aos="fade-right" data-aos-delay="900">
+                    <i class="ph ph-paper-plane-tilt" id="item-icon"></i>
+                    <div class="item2">
+                        <strong>Email</strong>
+                        <p>smknuruliman@gmail.com</p>
+                    </div>
+                </div>
 
-    .text {
-        width: auto;
-        padding: 20px;
-    }
+                <div class="item1" data-aos="fade-right" data-aos-delay="1000">
+                    <i class="ph ph-instagram-logo" id="item-icon"></i>
+                    <div class="item2">
+                        <strong>Instagram</strong>
+                        <p>@smk_nuruliman</p>
+                    </div>
+                </div>
+            </div>
 
-    /* contact */
-    .container{
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 10px;
-      }
-      main{
-        width: auto;
-        display: flex;
-        justify-content: center;
-      }
-      .card-item{
-        width: auto;
-        padding: 0;
-      }
-      .ftr-item{
-        width: auto;
-      }
-      .nuri-jpg{
-        width: auto;
-      }
+        </div>
+    </section>
 
-}
+    <!-- footer -->
+    <footer>
+        <div class="ftr-item">
+            <b>created by</b>
+            <em>dz30</em>
+            <em>github</em>
+            <em>vscode</em>
+            <em>replit</em>
+        </div>
 
-@media (min-width: 700px){
-    header.navbar nav ul li:hover {
-        border-bottom: 2px solid rgb(36, 83, 133);
-        margin: 0 15px;
-        border-radius: 10px;
-        padding: 5px;
-        background-color: rgb(33, 93, 172);
-        text-align: center;
-        color: white;
-    }
-    /* #typing span{
-        color: #5fa1d7;
-    } */
-    header.navbar{
-        top: 0;
-    }
-    .ftr-item-a{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        color: white;
-        text-align: center;
-    }
-    .revo{
-        width: 30%;
-    }
-}
+        <div class="ftr-item">
+            <b>suport by</b>
+            <em>smknuruliman</em>
+            <em>Rpl</em>
+            <em>paksyahlan</em>
+            <em>pak AL</em>
+        </div>
+
+        <div class="ftr-item">
+            <b>Rekomend class</b>
+            <em>Revou.id</em>
+            <em>edspert.id</em>
+            <em>Myskills</em>
+            <em>dicodng.id</em>
+        </div>
+
+        <div class="ftr-item">
+            <div class="logo-nuri">
+            <img src="https://scontent.cdninstagram.com/v/t51.2885-19/118694098_322609529159491_5994956662830142362_n.jpg?stp=cp0_dst-jpg_s110x80&_nc_cat=106&ccb=1-7&_nc_sid=fcb8ef&_nc_ohc=kTUfFbqHiL0Q7kNvgGjfVWm&_nc_ht=scontent.cdninstagram.com&oh=00_AYC7P_cE6tHmy2Gk8ASnmFKGo-K2tkaREwzUGWlE-t5mkQ&oe=66BEA13F"
+                class="nuri-jpg">
+            </div>
+            <b>SMK NURUL IMAN</b>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
