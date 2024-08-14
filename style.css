@@ -65,6 +65,14 @@ section {
     border-radius: 50%;
     border: 2px solid white;
 }
+.home1{
+    gap: 2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 section#home {
     height: 100vh;
     display: flex;
@@ -93,6 +101,7 @@ section#home {
 .tema{
     gap: 2rem;
     flex-wrap: wrap;
+  
     /* text-shadow: 0 6px 10px rgb(21, 9, 9); */
 }
 
@@ -541,5 +550,16 @@ footer{
     }
     .revo{
         width: 30%;
+    }
+}
+
+@media (min-width: 900px){
+    .home1 {
+        position: relative;
+        transition: transform 0.5s ease-out;
+    }
+    
+    .home1.slide {
+        transform: translateX(900px); 
     }
 }
