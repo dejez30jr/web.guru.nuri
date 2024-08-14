@@ -10,6 +10,22 @@
 // });
 
 
+
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY;
+        var element = document.querySelector('.home1');
+        var elementPosition = element.offsetTop;
+
+        // Mengecek apakah pengguna scroll ke bawah atau ke atas
+        if (scrollPosition > elementPosition) {
+            element.classList.add('slide');
+        } else {
+            element.classList.remove('slide');
+        }
+    });
+
+
+
 const text = "SYAHLAN BUDISANTOSO";
 let index = 0;
 const speed = 100; 
@@ -23,3 +39,9 @@ function typeWriter() {
 }
 
 window.onload = typeWriter;
+
+
+
+// document.addEventListener('contextmenu', function(e) {
+//     e.preventDefault();
+// }, false);
