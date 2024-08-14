@@ -327,10 +327,34 @@ footer{
     bottom: 0;
     color: white;
 }
+.revisi{
+    display: none;
+}
 
 @media (max-width: 319px){
-    body{
+    header{
         display: none;
+    }
+    section#home{
+        display: none;
+    }
+    section#about{
+        display: none;
+    }
+    section#kontak{
+        display: none;
+    }
+    section#Experience{
+        display: none;
+    }
+    .revisi{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: rgb(16, 145, 16);
+        font-weight: bold;
     }
 }
 @media (max-width: 379px) {
