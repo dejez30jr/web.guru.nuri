@@ -10,6 +10,12 @@
 // });
 
 
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+}, false);
+
+
+
 
     window.addEventListener('scroll', function() {
         var scrollPosition = window.scrollY;
