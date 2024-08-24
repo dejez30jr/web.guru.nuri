@@ -32,7 +32,7 @@ document.addEventListener('contextmenu', function(e) {
 
 
 
-const text = "SYAHLAN BUDISANTOSO";
+const text = "SAHLAN FAUZI";
 let index = 0;
 const speed = 100; 
 
