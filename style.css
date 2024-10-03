@@ -60,6 +60,7 @@ nav{
 .img-screen1{
     border-radius: 50%;
     width: 100%;
+    height: 300px;
 }
 .judul{
     width: 100%;
@@ -174,6 +175,9 @@ nav{
     /* screen 1 */
     .isi-screen1{
         width: 90%;
+    }
+    .img-screen1{
+        height: auto;
     }
     /* screen2 */
     .screen2{
